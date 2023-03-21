@@ -12,16 +12,7 @@
         https://www.youtube.com/watch?v=kUMe1FH4CHE&t=1219s">
 
         <title>Learning HTML</title>
-        <style>
-            html {
-                font-size: 22px;
-            }
-
-            body {
-                background-color: #333;
-                color:whitesmoke;
-            }
-        </style>
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
 
     <body>
@@ -39,8 +30,7 @@
             greater than symbols. (&#60; &#62;)</p>
         <p>The end section has a slash / symbol just after the less than sign.</p>
         <p>The first element will require: !DOCTYPE html
-            This is required above the html element.
-        </p>
+            This is required above the html element.</p>
         <p>The second element is html. All code goes between the html
             start and end element.</p>
         <p>You should include the language attribute (example: html lang="en")
@@ -80,9 +70,9 @@
             adding CSS code to the HTML.</p>
         <p>font-size: numberpx is used to adjust the font-size
             (the nuberic size you want for your font to be. Example: 22px).</p>
-        <p>The brackets with a pointy middle section { contain the style elements.
-            example: {font-size numberpx} (number being the font size.)
-        </p>
+        <p>The brackets with a pointy middle section
+             contain the style elements.
+            example: {font-size numberpx} (number being the font size.)</p>
         <p>background-color: is used to change the background color of the webpage.</p>
         <p>#333 is an example of a color. It changes the background to a
             black color.</p>
@@ -92,7 +82,21 @@
             (color: whitesmoke) It changes the color of the text to white.</p>    
         <p>The semi colon is used to seperate lines of code in CSS
             (They are not needed for standard html).</p>
+        <p>CSS code typically goes inside another file seperate from the
+            html code. This file is often named main.css
 
+            The style tags do not need to be inside the main.css file.
+            You can cut and paste just the code from inside the stype tag 
+            into the main.css file. Remove the style element from the
+            html code and add &#60;link rel=&#8220;stylesheet&#8221;
+            href=&#8220;main.css&#8221; type=&#8220;text/css&#8221;&#62;</p>
+        
+        <p>The code to link the css file goes above the /head end head tag</p>
+        <p>stylesheet refers to the main.css type.</p>
+
+        <p>type=&#8220;text/css&#8221; refers tot the file type of the
+            main.css file.
+        </p>
     <br>
     <h3>How to stop and start live updates goint to the server:</h3>    
             
@@ -112,7 +116,8 @@
         <p>List of special symbols code:</p>
         <a href="https://www.teachucomp.com/special-characters-in-html-tutorial/">
             List of special symbols code:</a>
-        <p>To add a hyperlink to a website type a or &#60;a&#62; and &#60;/a&#62;</p>
+        <p>To add a hyperlink to a website type a or
+            &#60;a&#62; and &#60;/a&#62;</p>
 
     <br>
     <h3>To add an image to the website: </h3>
@@ -122,9 +127,25 @@
             html file then you will just need the file name and type ex. path.jpg
             and end quotation mark),
             then alt, equals, quotation mark, file name, end quotation mark and
-            finally a greater than sign. 
-        </p>
+            finally a greater than sign.</p>
+
         <img src="CodeForHowToAddAnImage.JPG" alt="CodeForHowToAddAnImage">
+
+        <p>To add a Fav icon:</p>
+
+        <p>&#60;link rel=&#8220;icon&#8221; href=&#8220;FileName.png&#8221; 
+        type=&#8220;image/x-icon&#8221;&#62;</p>
+        
+        <p>rel stands for relate and refers to how does the icon relate to
+          the webpage. icon for instance refer to an icon relationship
+         of course.</p>
+        
+        <p>href refers to html that stands in part for hypertext 
+         and href is a hypertext reference. The file name in the 
+        Visual studio code folder will go here.</p>
+
+        <p>The type refers to the type of resource is being used. 
+        image/x-icon for instance is a type.</p>
 
         <br>
         <h3>Additional tools and help:</h3>
@@ -133,14 +154,19 @@
         <p>ctrl s is used for quickly saving code in Visual Studio Code.</p> 
         <p>The Markup Validation Service will allow us to check our HTML
             for errors or issues that would have to be resolved prior to
-            uploading online.
-        </p>
+            uploading online.</p>
+
         <a href="https://validator.w3.org/">HTML quality checker</a>
-        <p>alt z allows you to wrap text allowing it to 
+        <p>alt z allows you to wrap words allowing it to 
             extend to the next line below the current line.
             This will extend text inside quotation marks to the
-            line below it. 
-        </p>
+            line below it.</p>
+        <p>When copying text with quotation marks the quotation marks
+            may not be reconized if they are a front or back quote because
+            Visual Stuido Code quotation marks don't have a direction and
+            the quotation marks may be considered by Visual Stuido Code to
+            be a different character.</p>
+
 
         <br>
         <h3>Additional meta tags to consider adding:</h3>
@@ -154,13 +180,12 @@
             the website. This would be 
             meta name=&#8221;description&#8220;
             content=&#8221; &#8220; with the description going 
-            Inside the quotation marks following content=
-        </p>
+            Inside the quotation marks following content=</p>
 
         <br>
         <h3>Current video location:</h3>
-        <a href="https://youtu.be/kUMe1FH4CHE?t=1329">Video Link</a>
-        <p> 15 Mar 2023</p>
+        <a href="https://youtu.be/kUMe1FH4CHE?t=1698">Video Link</a>
+        <p> 21 Mar 2023</p>
 
     </body>
 
