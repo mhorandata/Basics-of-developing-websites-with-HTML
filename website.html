@@ -74,10 +74,214 @@
 
             <br>
             <h3>How to Set up a Domain Name:</h3>
-            
+            <p>Two steps to setting up a domain name:</p>
+            <ol>
+              <li>Get a domain name.</li>  
+              <li>Link domain name ot GitHub Pages</li>
+            </ol>
+        <p>You have to purchase a domain name from a Domain Registrar.</p>
+        <p>Domain Registrars are companies certified to sell domain names.</p>
+        <p>Domain names are not expensive.</p>
+        <p>A Domain ending in .com cost $10-$15 dollars per yer.</p>
+        <p>Once you register a domain name it is taken so other 
+            people can't register it.</p>
+        <p>namecheap is a highly recommended Domain Registar.</p>
+<a href="https://www.namecheap.com/promos/new-com-promo/?clickID=VxAW7AWl-xyIRHHRgsyc1zb2UkAWQYzpTQPkW00&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=3110155&affnetwork=ir&ref=ir">
+    namecheap link</a>
+        <p>Use coupon NEWCOM598 to get a .com domain for $5.98 (33%+ OFF, new accounts only).</p>  
+        <p>After using the namecheap link click on Domains at the top of the home page.</p>
+        <p>In the &#8220;Find your new domain name&#8221; Search box you can look for the domain name you want.</p>
+        <p>If you search for a domain name that is already registered
+            it will tell you that it is already registered.</p>
+        <p>If you are unsure of what to register first you can use your
+            firstnamelastname.com</p>
+        <p>If the .com version is taken you can also search for the .net option.</p>
+        <p>If you are sticking with .com but it isn't available you can
+            add something to your name like dev for developer.</p>
+        <p>Once you find the one you want click on Add to cart to the
+            right of the name.</p>
+        <p>Once the domain name(s) are in your cart you go up to the 
+            cart icon in the top right and click on View Cart.</p>               
+        <p>In the cart make sure Domain Privacy is Enabled otherwise
+            you will get spammed.</p>
+        <p>If everything looks good click on Confirm Order.</p>
+        <p>Next you will have to create a namecheap account.</p>
+        <p>Go though the process of creating the namecheap account.</p>
+        <p>After you have created an account and are logged in, 
+            you can go back to the cart and Confirm Order.</p>
+        <p>If the details look okay in the checkout page click Pay Now to register your
+            domain.</p>
+        <p>To view your domain go to the namecheap homepage and go into
+            Account then Dashboard.</p>
+        <p>The Dashboard should show the new domain name you purchased.</p>
 
-        <a href="https://youtu.be/p1QU3kLFPdg?t=651">Video Link</a>
-        <p> 22 Mar 2023</p>
+            <br>
+            <h3>Important information about this process:</h3>
+        <p>A web server is just a piece of softwared you run on your
+            computer. GitHub is a Web Server but run on their computers.
+            Live Server is also a web server.</p>
+        <p>A web server can communicate with a browser. This is done
+            by typing in a url.</p>
+        <p>The browser can ask the web server for files.</p>
+        <p>If you happen to get back an html file it will display the
+            website instead of giving back the text of the file.</p> 
+        <p>Web Servers need a computer for it to run. The computer running
+            the web server is called a host.</p>
+        <p>Web Hosting Company provides you with computers to run
+            the web servers and the server software.</p>
+        <p>The ip address is given anytime the internet is accessed.</p>
+        <p>The IP address like a phone number is able to be contacted
+            by other devices connected to the internet. IP addresses
+        are unique.</p>
+        <p>There are two kinds of IP addresses:</p>           
+        <ol>
+            <li>IPv4 (4 has groups of typically 3 numbers seperated by decimals)</li>
+            <li>IPv6 (has around 15 digits mostly numbers some letters seperated by colons)</li>
+        </ol>
+        <p>Version 6 exist because ip addresses for version 4 are running out.</p>
+        <p>We need to link our domain name to GitHub's ip address.</p>
+        <p>We can set up a link between a domain name and an ip address in
+            a Domain Registrar 
+            (If you bought your domain name from namecheap it will be
+            the one you purchased through them).</p>
+        <p>The link between the Domain Registrar and the GitHub ip
+            address is called a DNS record (Domain Name System Record).</p>
+
+            <br>
+            <h3>How to Set up a DNS Record inside the Domain Registrar:</h3>
+        <p>Login to your domain registrar 
+            (namecheap if you bought your name there.)</p>
+        <p>The remaining instructions for the domain registrar are
+            using namecheap.</p>
+        <p>Once logged in go to the Settings for the domain name.</p>
+        <p>To go to Settings for the domain name in namecheap click on
+            Domain List.</p>
+        <p>Scroll down to the domain name you want to use.</p>
+        <p>Click the Manage button to the right of the domain name.</p>
+        <p>Click on the Advanced DNS tab.</p>
+        <p>Scroll down to the table with headers of &#8220;Type&#8221;, &#8220;Host&#8221;,
+            &#8220;Value&#8221;, and &#8220;TTL&#8221;.</p>
+        <p>You can also look on Google for Manage dns records YourDomainRegistrarName</p>
+        <p>Under the table there will be a &#8220;ADD NEW RECORD&#8221;
+            button. Click this button.</p>
+        <p>Fill in the values for the DNS record.</p>
+        <p>The first value you will fill in is the Record type.</p>
+        <p>For an ip address use an &#8220;A Record.&#8221;</p>
+        <p>Next value will be the TTL value.</p>
+        <p>TTL stands for TIme To Live. This refers to how
+            long after chaning the DNS records before they change
+            accross the internet. short TTL means the DNS changes will
+            be updated very quickly. A long TTL means it will be updated
+            more slowly. Long TTLs are a little more efficient but 
+            for this project you can select 5 minutes. If it asks for
+            seconds instead of minutes do 300 seconds which is 5 minutes.</p>
+        <p>Next the sub domain (Under the Host heading) is the part of the url in front of a domain
+            name.</p>
+        <p>We want the sub domain to be blank. To do this using namecheap
+            we use the at (@) symbol.</p>
+        <p>For other domain registrars you can just leave it blank.</p>
+        <p>The last value needed is the IP Address (of GitHub Pages).</p>
+        <p>To find the IP Address of GitHub Pages go to a new tab
+            and search for dns lookup.</p>
+        <p>The website you want will under https://mxtookbox.com</p> 
+        <a href="https://mxtoolbox.com/DNSLookup.aspx">
+            DNS lookup tool (IPv4)</a>
+        <a href="https://mxtoolbox.com/IPv6.aspx">
+            DNS lookup tool (IPv6)</a>
+        <p>At this address you can search for a domain Name
+            and see which IP addresses are currently linked to
+            it.</p>
+        <p>Type in the GitHub user name followed by .github.io
+             in the Domain Name search bar.</p>
+        <p>UserNameWithGitHub.github.io (This is the default
+            name GitHub gives you)</p>
+        <p>Click on DNS Lookup.</p>
+        <p>It will show you the IP addresses associated with 
+            GitHub Pages.</p>
+        <p>For each IP address you will need to create a DNS record.</p>
+        <p>First click on one of the IP address results in
+             the DNS lookup tool.</p>
+        <p>Then copy the IP address that appears on the left
+            (the information after the ptr:)</p>
+        <p>Paste the Copied IP address from the DNS lookup tool
+            Into the IP Adress under the Value header of the
+            namecheap page.</p>
+        <p>If all four values are filled out click the green
+            checkmark to Save Changes.</p>
+        <p>Repeat the steps for filling in the values for the 
+            reamining IP addresses that appeared in the DNS lookup tool.</p>
+            
+            <br>
+            <h3>Setting up the www sub-domain</h3>
+        <p>The final step is to set up a sub-domain called www</p>
+        <p>Although setting up the www is not required it is 
+            recommended by GetHub Pages.</p>
+        <p>In namecheap you will need to click on ADD NEW RECORD
+            again in the settings of your Domain Name.</p>
+        <p>Instead of an A Record like the other ones you set up,
+            This record will be a CNAME Record.</p>
+        <p>Record types Info:</p>
+        <ol>
+            <li>A Record: Links a website to an IP address</li>
+            <li>CNAME Record: Links a domain name to another domain name</li>
+        </ol>
+        <p>The CNAME makes it easier to link to GitHub Pages without
+            having to know the specific ip addresses.</p>
+        <p>In the sub-domain section (under the Host header)
+            you will put www</p>
+        <p>Under the Value header section (IP address section) 
+            you will put your UserNameWithGitHub.github.io 
+            (This is the default name GitHub gives you).</p>
+        <p>In the TTL section you will choose 5 minutes
+            (or 300 seconds).</p>
+        <p>Click the checkmark to save the changes.</p>
+        <p>You can only use CNAME Records for sub-domains</p>
+        <p>You should setup IP addresses for both IPv4 and IPv6.
+            IPv6 will start being used more in the future.</p>
+        
+            <br>
+            <h3>Tell GitHub Pages which domain name we want to use.</h3>
+        <p>Go back to github.com and log on.</p>
+        <p>Click on the profile picture in the top right after loggin in</p>
+        <p>Choose your repositories</p>
+        <p>Click on the repository name link to open it.</p>
+        <p>Click on settings for the repository.</p>
+        <p>Click on Pages.</p>
+        <p>Scroll down to the Custom domain section and click in the 
+            box to enter what domain name you want GitHub Pages to use.</p>
+        <p>Enter in the domain name you set up earlier in the box.</p>
+        <p>Example:</p>
+        <p>DomainName.com</p>
+        <p>Then click Save.</p>
+        <p>It can take some domain registars 24-48 hours for the 
+            DNS records to update.</p>
+        <p>Once Saved it will show the message: 
+            &#8220;Your site is published at&#8220; followed by
+        the website.</p>
+        <p>You can also type this domain name in the url</p>
+        
+        <br>
+        <h3>Setting up HTTPS</h3>
+        <p>Even though the site is live it is not secure.</p>
+        <p>To secure it you need to set up HTTPS.</p>
+        <p>HTTPS encripts all data flowing between the browser and the 
+            website.</p>
+        <p>To set up HTTPS go back to GitHub Pages.</p>
+        <p>In the repository settings of your website scroll down 
+            until you find the Enfoce HTTPS check box.</p>
+        <p>Check the box.</p>
+        <p>There is a behind the scenes process to set up HTTPS
+          and it may take up to 15 minutes.</p>
+        <p>Once the process is finished just refresh the page and
+            the checkbox should be enabled (You still have to check it).</p>
+        <p>Check the box and and it will say the DNS check is in progress.</p>
+        <p>Now go back to your website url and type https:// in
+            front of it.</p>
+        <p>A lock icon will appear in front of the website indicating that
+            the https is enabled.</p>
+
+        <a href="https://youtu.be/p1QU3kLFPdg?t=651">Link to SuperSimpleDev video</a>
+    
         
     </body>
 </html>
