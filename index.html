@@ -18,6 +18,7 @@
     <body>
         <h1>Basics of developing websites with HTML.</h1>
 
+    <hr>    
     <br>
     <h3>Basics:</h3>
 
@@ -45,6 +46,7 @@
         <p>The element p is used for Paragraph and is used for
             Paragraph string text.</p>
 
+    <hr>
     <br>
     <h3>Extentions:</h3>
 
@@ -57,16 +59,13 @@
         <p>Once the Live Server extention is installed you can right click and
             choose Open with Live Server to open in a webpage.</p>
 
+    <hr>
     <br>
     <h3>Intro to CSS:</h3>
 
         <p>The style element allows you to change the style of text in
             the webpage. This element starts after the title and before
-        the body section. 
-        Note:
-            If you have a main.css file css code should go in there and not in 
-        html code. If you have it in the main.css file then the style tags are
-        not needed and the code in the html can be removed.</p>
+        the body section.</p>
 
         <img src="StyleElementCodeExample.JPG" alt="StyleElementCodeExample"> 
 
@@ -75,7 +74,7 @@
         <p>font-size: numberpx is used to adjust the font-size
             (the nuberic size you want for your font to be. Example: 22px).</p>
         <p>The brackets with a pointy middle section
-            contain the style elements.
+             contain the style elements.
             example: {font-size numberpx} (number being the font size.)</p>
         <p>background-color: is used to change the background color of the webpage.</p>
         <p>#333 is an example of a color. It changes the background to a
@@ -101,6 +100,8 @@
         <p>type=&#8220;text/css&#8221; refers tot the file type of the
             main.css file.
         </p>
+
+    <hr>    
     <br>
     <h3>How to stop and start live updates goint to the server:</h3>    
             
@@ -110,6 +111,7 @@
             code live again.
         </p>
 
+    <hr>
     <br>
     <h3>How to add a special character without it being confused for code:</h3>    
 
@@ -123,6 +125,7 @@
         <p>To add a hyperlink to a website type a or
             &#60;a&#62; and &#60;/a&#62;</p>
 
+    <hr>
     <br>
     <h3>To add an image to the website: </h3>
         <p>   first drag and drop the image into the Explorer section of Visual Studio
@@ -141,18 +144,154 @@
         type=&#8220;image/x-icon&#8221;&#62;</p>
         
         <p>rel stands for relate and refers to how does the icon relate to
-        the webpage. icon for instance refer to an icon relationship
-        of course.</p>
+          the webpage. icon for instance refer to an icon relationship
+         of course.</p>
         
         <p>href refers to html that stands in part for hypertext 
-        and href is a hypertext reference. The file name in the 
+         and href is a hypertext reference. The file name in the 
         Visual studio code folder will go here.</p>
 
         <p>The type refers to the type of resource is being used. 
         image/x-icon for instance is a type.</p>
 
-        <br>
-        <h3>Additional tools and help:</h3>
+    <hr>
+    <br>
+    <h3>Text Basics:</h3>
+        <p>Headings have a hierarchy. You typically only start out
+            with 1 h1 on the page. Each page should only have 1
+            h1.</p>
+        <p>The numbers above 1 for the headers (h2-h6) are sub sections
+            that there can be multiple of and divide up the page Into
+            multiple sections.</p>
+        <p>Typcially the higher the header numbers the more specific
+        about a section topic you get (a hierarchy). 
+        (The h1 for example is going to be a header for 
+        the whole page, h2 would be a category of the
+        page, h3 would be about a topic in the category of the page,
+        h4 would be a point about the topic in the category of the page,
+        h5 would be a note about the point about the topic in the
+        category of the page, and h6 would be a very specific detail
+        about the note about the point about the topic in the category
+        of the page).</p>
+        <p>You can change the header's look though css and are not
+        stuck with just choosing only between the six heder sytles.</p>
+        <p>hr stands for horizontial rule. It doesn't have a closing
+        tag just the &#60;hr&#62;. This will add lines accross the page
+         to divide up section of code.</p>
+        <p>Webpages (html) does not reconize extra space you put
+            at the end fo the Paragraph tags and will format 
+            based on where there is text.</p> 
+        <p>br stands for break and refers to a line break
+            &#60;br&#62; as with hr there is no ending tag needed.</p>
+        <p>Block level elements start each new section of text on a 
+            new line (header, br and p are examples of block level
+            characters that add space).</p>
+        <p>In line level elements don't have the exta space 
+            between each section of text. (Some of the below
+        elements like em and strong are examples of in-line
+        elements that can be used in the middle of say a Paragraph
+        tag and don't add space between characters).</p>
+        <p>em element: &#60;em&#62; (stands for emphasis) allows you to italicize something
+            to stronger emphasis of that word (important note:
+            the italicized characters have emphasis for the sake of
+            websites reconizing the words are more imporant. The correct
+            way to italicize a word would be through css.)</p>
+        <p>strong element start, &#60;Strong&#62; 
+            end, &#60;/Strong&#62; makes the text a little
+        bold. </p>
+        <p>html entities are things not part of the normal text
+            you would still type out. Ampersand &#38; 
+            is often part of these entities. 
+            Because some symbols are automatically considered
+            part of code you have to use special characters such as
+            Ampersand to type these out. In the:
+            &#8220;How to add a special character without it being confused for code:&#8221;
+            Section above a link to code for special characters was given. It is also
+            added here below: (note the list is incomplete and there
+            are many others some of which we will go over below.)</p> 
+            <a href="https://www.teachucomp.com/special-characters-in-html-tutorial/">
+                List of special symbols code:</a>
+        <p>entities start with Ampersand &#35; then the hashtag symbol
+            &#35; followed by numbers and finally the semicolon &#59;.    
+        </p>
+        <p>&#38;lt&#59; is used for less than. &lt;</p>
+        <p>&#38;gt&#59; is used for greater than than. &gt;</p>
+        <p>&#38;copy&#59; is for the copyright symbol. &copy;</p>
+        <p>&#60;abbr title=&#8220;abbreviationInformation&#8221;
+             &#62; ABBREVIATION &#60;/abbr&#62; end is used for
+            adding abbreviations. The start tag has title equals
+            followed by the abbreviation informaiton in quotation marks then greater than
+            followed by the actual abbreviation and closing tag.
+            When you hover over the abbreviation in the LiveServer it will
+            show the abbeviationInformation you typed between the quotation
+            marks. (Hovering over the abbreviation in an actual website 
+            may not show anything so don't rely on this for showing any
+            important information when the website is up.)</p>
+
+        <p>&lt;address&gt; is used for reconizing a physical address
+            is being used. Whatever search engine you use will reconize
+            that this is an address and change how it behaves.</p>
+        <p>html comments start with a less than sign,
+            exclamation mark &#33;, &lt;, four dashes
+            --- and ends with a greater than sign &gt;. The note goes
+            in the middle of the dashes (two dashes in).
+            Example: &lt;&#33;--Note to self--&gt;
+            This message can still seen online if someone knows how,
+            (right click and choose inspect)
+            you should therefore only put notes that won't be an issue
+            if someone else online sees it.</p>
+
+    <hr>
+    <br>
+    <h3>How to create list on a webpage:</h3>
+        <p>3 types of common list: ordered list, unordered list,
+        and description list.</p>
+        <p>&lt;li&gt; &lt;/li&gt; Creates a list tag with the list
+            itmes going between the start and end list tags.</p>
+        <p>&lt;ol&gt; &lt;/ol&gt; stands for ordered list. The start ol goes before the
+            li tag and ends after the last li tag to make the whole list
+            ordered. There is no need for paragraph elements inside the list
+            (A paragraph element will put spaces between each list number).
+            Ordered list are numbered in ascending order 
+            (smallest to largest). 
+            These list do not have extra space like Paragraph elements
+            do between each other.</p>
+        <p>&lt;ul&gt; &lt;/ul&gt; stands for unordered list. The paragraph
+            element can be left inside an unordered list (the li start
+            elements go before the start p element and the end li goes
+            after the end p element). The result of an unordered 
+            list is a list of bullet points that does have the extra
+            space if you have paragraph elements inside the list.
+        <p>&lt;dl&gt; &lt;/dl&gt; stands for description list. There are two
+            different kinds of elements in a description list and instead of
+            just li like in ordered and unordered list. &lt;dt&gt; &lt;/dt&gt;
+            stands for description term and refers to the a list item description.
+            &lt;dd&gt; &lt;/dd&gt; stands for description detail and
+            goes below the dt. The dd is where the information about
+            the list item in the dt is entered (like a definition of
+            a word goes in the dd and the word in the dt.)
+            The description detail is indented to the right
+            slightly more than the description term.</p>
+        <p> Example: </p>
+
+        <p> &lt;dl&gt;</p>
+        <p> &lt;dt&gt;dl&lt;/dt&gt;</p>
+        <p> &lt;dd&gt;dl stands for description list.&lt;/dd&gt;</p>
+        <p> &lt;dt&gt;dt&lt;/dt&gt;</p>
+        <p> &lt;dd&gt;dt stands for description term.&lt;/dd&gt;</p>
+        <p> &lt;dt&gt;dd&lt;/dt&gt;</p>
+        <p> &lt;dd&gt;dd stands for description detail.&lt;/dd&gt;</p>
+        <p> &lt;/dl&gt;</p>
+
+    <hr>
+    <br>
+    <h3>Add Links:</h3>
+        <p></p>
+
+
+    <hr>
+    <br>
+    <h3>Additional tools and help:</h3>
         <p>How to add a break: Use the br element</p>
 
         <p>ctrl s is used for quickly saving code in Visual Studio Code.</p> 
@@ -170,15 +309,19 @@
             Visual Stuido Code quotation marks don't have a direction and
             the quotation marks may be considered by Visual Stuido Code to
             be a different character.</p>
+        <p>shift alt down-arrow will copy the above line to directly
+            below it.</p>
+        <p>Changing the number in the start tag section will automatically
+            change the end tag to the same value as well.</p>
 
-
-        <br>
-        <h3>Additional meta tags to consider adding:</h3>
+    <hr>
+    <br>
+    <h3>Additional meta tags to consider adding:</h3>
         <p>A meta tag for the webpage author is recommended.
             It stars with name=&#8221;author&#8220; followed by
-            content=&#8221; &#8220; with the author's name 
-            (your own name if you build this website) Inside
-            the quotation marks following content=
+             content=&#8221; &#8220; with the author's name 
+             (your own name if you build this website) Inside
+             the quotation marks following content=
         </p>
         <p>Another meta tag might be a description of
             the website. This would be 
@@ -186,10 +329,11 @@
             content=&#8221; &#8220; with the description going 
             Inside the quotation marks following content=</p>
 
-        <br>
-        <h3>Current video location:</h3>
-        <a href="https://youtu.be/kUMe1FH4CHE?t=1698">Video Link</a>
-        <p> 21 Mar 2023</p>
+    <hr>
+    <br>
+    <h3>Current video location:</h3>
+        <a href="https://youtu.be/kUMe1FH4CHE?t=3617">Video Link</a>
+        <p> 27 Mar 2023</p>
 
     </body>
 
