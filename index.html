@@ -229,16 +229,68 @@
     <hr>
     <br>
     <section id="To add an image to the website:">
-    <h3>To add an image to the website: </h3>
-        <p>   first drag and drop the image into the Explorer section of Visual Studio
-            Code. Then use less than, img, src, equals sign, quotation marks,
-            the file path (note if this path is in the same folder as your current
+    <h3>To add an image to the website:</h3>
+        <p>It is common practice to create a folder for images often named something like
+        img (Just remember that moving images will change the file path. If you move images into another folder you will need
+        to change the code anywhere the image was previously referenced in your code).</p>
+        <p>As you start typing the fodler name (Such as img if you named it that) in the src=alt=&#8220; section 
+            it will most likely pop up as a suggestion. Clicking on the folder name that pops up will result
+            in additional pop-up suggestions for the other files in that folder. This can make referencing a
+            file much quicker and easier.</p>
+        <p> first drag and drop the image into the Explorer section of Visual Studio
+            Code (If you have an img folder put it in there). Then use less than, img, src, equals sign, 
+            quotation marks, the file path (note if this path is in the same folder as your current
             html file then you will just need the file name and type ex. path.jpg
             and end quotation mark),
             then alt, equals, quotation mark, file name, end quotation mark and
             finally a greater than sign.</p>
 
-        <img src="CodeForHowToAddAnImage.JPG" alt="CodeForHowToAddAnImage">
+        &lt;img src=&#8220;FilePath.JPG&#8221; alt=&#8220;Image Explanation&#8221;&gt;
+        
+        <P>Example:</P>
+        <img src="FilePathGoesHere.JPG" alt="Example Code For How To Add An Image" title="Example code for adding an image in HTML"
+        width="725" height="27">
+        <p>img (as in the img element or folder) is short for image.</p>
+        <p>src (as in the source attribute) is short for source (the file path is 
+            a path to the source where the image is coming from)</p>
+        <p>alt (as in the alternate attribute) is an alternate text used for an image in the event a user
+            cannot view it (such as the user uses a screen reader).</p>
+        <p>the title attribute is an attribute that while not required should typically be included
+            in the img element. It would go after the &#8221; of the alt attribute. The title attribute
+            will provide the user the informaiton when hovered over and adds a little extra information
+            about the image.
+            alt=&#8220;Image Explanation&#8221; title&#8220;Information for the user to read when 
+            hovered over&#8221;&gt;</p>
+        <p>The width and height attributes are also not required but common. The width attribute
+            would go after the &#8221; of the alt attribute (or after the title attribute if you
+            included one). If you just include the width and not the height it will adjust the height 
+            automatically to keep the same ratio as the height to width ratio the image you added to
+            visual studio code had (If the image is 20% taller then wider for instance decreasing the 
+            width would decrease the height to still only be 20% taller). The height attribute goes after
+            the width attribute.</p> 
+        <p>title&#8220;Information for the user to read when hovered over&#8221;&gt; width=&#8220;Number in pixles
+            &#8221; height=&#8220;Number in pixles&#8221;&gt;</p>
+        <p>Even though CSS may be used in place of the height and width it is common now for people to include
+            the height and width attributes here and changes can still be made to the width and height in CSS as needed.
+            The reason these are provided is to help with cumulative layout shift which basically is the shifting of the website
+            as a result of the user preforming actions (like scrolling up or down the webpage).</p>
+        <p>If you click on an image you added to Visual Studio in the EXPLORER window and look at the bottom middle of
+            the page it will show you the current width by height (the first number 
+            is the width and the second number the height widthXheight) dimensions.</p>
+        <p>Using the same dimensions for the height and width attributes as the image you imported 
+            is a simple way to keep the image the same quality while also helping prevent cumulative layout shift
+            issues.</p>
+        <p>The &#8220;fold&#8221; in web design refers to the bottom of the screen and everything above the fold
+            is immediately visible to the reader as soon as the page loads while anything below the fold requires
+            scrolling.
+        </p>
+        <p>The loading attribute has two potential values eager (which is the default value and if the loading attribute
+            isn't included it will automatically be eager) or lazy. Lazy will take less of a toll because it will not automatically
+            start to load everything below the fold of your webpage when opened. Instead Lazy waits until the user starts to
+            scroll down towards the image.</p>
+        
+
+
 
         <p>To add a Fav icon:</p>
 
@@ -255,6 +307,10 @@
 
         <p>The type refers to the type of resource is being used. 
         image/x-icon for instance is a type.</p>
+        
+        
+        <p>Sometimes a slash / is required after the alt=&#8220;&#8221; and before the &gt; symbol.
+            alt=&#8220;FileName&#8221; /&Gt;</p>
     </section>
 
     <nav>
@@ -621,11 +677,11 @@
     <hr>
     <br>
     <h3>Current video location:</h3>
-        <a href="https://youtu.be/kUMe1FH4CHE?t=5422">Video Link</a>
+        <a href="https://youtu.be/kUMe1FH4CHE?t=6203">Video Link</a>
         <p>End section:</p>
         <p>&#8220;Add Links:&#8221;</p>
         <p>Line:</p>
-        <p>550</p>
+        <p>291</p>
         <p>13 Apr 2023</p>
 
     </body>
