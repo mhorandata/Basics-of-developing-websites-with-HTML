@@ -17,11 +17,12 @@
 
     <body>
         
+<header>
         <section id="Top">
         <h1>Basics of developing websites with HTML.</h1>
         <hr>    
-        <br>
         </section>
+</header>
 
     <a href="about.html">About Me Page</a>
 
@@ -57,6 +58,9 @@
             <a href="#Add Links:">Add Links:</a>
         </li>
         <li>
+            <a href="#Semantic Tags">Semantic Tags</a>
+        </li>
+        <li>
             <a href="#Additional tools and help:">Additional tools and help:</a>
         </li>
         <li>    
@@ -65,12 +69,17 @@
         </ul>  
     </nav>
 
+    
 
     <hr>    
     <br>
+    <main>
     <section id="Basics">
     <h3>Basics:</h3>
-
+        <p>I recommended looking over the "Addional tools and help" section (Section links above) first and then 
+            regularly going back to that section to learn helpful tricks that become more meaningful 
+            the more your read through this document.
+        </p>
         <p>All HTML code starts with less than on the left and greather than
             symbol on the right.</p>    
         <p>Each section of code is divided up into elements.</p>
@@ -288,27 +297,40 @@
             isn't included it will automatically be eager) or lazy. Lazy will take less of a toll because it will not automatically
             start to load everything below the fold of your webpage when opened. Instead Lazy waits until the user starts to
             scroll down towards the image.</p>
-        
+        <p>The figure element can be put around the image code and then elements like figcaption can be added
+            which will attach a caption to the image. The caption will be reconized by the browser and assistive technology.
+            This doesn't have to match the alt attribute but should be a description. The figure element will also indent the 
+            image to the right by default.</p>
+       <p>&lt;figure&gt;</p>
+        <p>&lt;img src=&#8220;FilePath.JPG&#8221; alt=&#8220;Image Explanation&#8221;&gt;</p>
+        <p>&lt;figcaption&gt;</p>
+            <p> description for browser and assistive technology.</p>
+       <p> &lt;/figcaption&gt;</p>
+       <p> &lt;/figure&gt;</p>
 
-
-
-        <p>To add a Fav icon:</p>
-
+        <p>If you are unsure what image you want to use but want to keep coding you can structure your code around a 
+            placeholder image that will hold the correct space and code structure of your future image (see link below).</p>
+        <a href="https://loremipsum.io/21-of-the-best-placeholder-image-generators/">Placeholder image generator</a>
+        <p>If you need a free image you can go to one of the below links and search for image that are licenced as being for
+            free use.</p>
+        <a href="https://unsplash.com/">Images that are licenced for free that you can add to your website.</a>
+        <a href="https://www.pexels.com/">Free stock photos.</a>
+        <a href="https://gratisography.com/">ROYALTY FREE HD STOCK PHOTOS AND IMAGES (unique and funny images)</a>
+        <a href="https://pixabay.com/">Over 2.8 million+ high quality stock images, videos and music shared by our talented community</a>
+        <a href="https://www.irfanview.com/">Load in and resize images (also image editing)</a>
+        <a href="https://www.canva.com/">Canva makes it easy to create professional designs and to share or print them. (Subscription cost money)</a>
+        <a href="https://tinypng.com/">Smart WebP, PNG and JPEG compression (makes the file size smaller so your website doesn't requrie as much space or time to load)</a>
+        <h4>To add a Fav icon:</h4>
         <p>&#60;link rel=&#8220;icon&#8221; href=&#8220;FileName.png&#8221; 
         type=&#8220;image/x-icon&#8221;&#62;</p>
-        
         <p>rel stands for relate and refers to how does the icon relate to
           the webpage. icon for instance refer to an icon relationship
          of course.</p>
-        
         <p>href refers to html that stands in part for hypertext 
          and href is a hypertext reference. The file name in the 
         Visual studio code folder will go here.</p>
-
         <p>The type refers to the type of resource is being used. 
         image/x-icon for instance is a type.</p>
-        
-        
         <p>Sometimes a slash / is required after the alt=&#8220;&#8221; and before the &gt; symbol.
             alt=&#8220;FileName&#8221; /&Gt;</p>
     </section>
@@ -614,6 +636,54 @@
         </ul>  
     </nav>
 
+
+
+    <hr>
+    <br>
+    <section id="Semantic Tags">
+    <h3>Semantic Tags</h3>
+        <p>Semantic tags help organize code in a meaningful way by clearly indicating the role of the content they contain.</p>
+        <p>The h1 tag is an example of a semantic tag. You should only have 1 h1 per page.</p>
+        <p>h1 is goes above the outline if you were writing a paper. The h1 tag is essentially the title of the webpage.</p>
+        <p>You can have multiple h2 headers. h2 headers define sub topics.</p>
+        <p>h3 headers are like a subtopic of a subtopic.</p>
+        <p>h4...h6</p>
+        <p>You typically don't want any more then 3 levels (h1-h3) of headings on a website.</p>
+        <p>semantic tags allows us to quickly see and navigate through different sections in a webpage.</p>
+        <p>nav elements are also semantic elements used for navigation.</p>
+        <p>hr is another semantic element called the horizontal rule tag and defines a break in an HTML page (it creates
+            a visual line that seperates sections of the webpage).</p>
+        <p>Semantic means that the tag (semantic tag) provides meaning. Each semantic tag adds new meaning.
+            Semantic tags also are reconized by the browser and assistive technologies.</p>
+        <p>Section elements say this is a new section.</p>
+        <h4>3 major Semantic tag sections</h4>
+        <p>The header element (not headings like h1) is the first major semantic tag section.
+            There can be more than one header element per page.</p>
+        <p>&lt;header&gt;Heading section content&lt;/header&gt;</p>
+        <p>The header section is different from the section element in that the header is used for grouping
+            together introductory or navigational aids while the section element is used for grouping sections
+            by their theme or related content. Adding the Header section will allow the browser and assistive
+            technologies to reconize the content inside the tag to be header content.</p>
+        <p>Main is the 2nd major semantic element. There can only be one main element per page.
+            The Main element tells the browser where the main content of the page is.</p>
+        <p>The main element is different from the body element in that the body will contain everything that will
+            be displayed to the user while the main element should only be the content that is directly related to the central topic
+            of the page.</p>
+        <p>&lt;main&gt;Content related to the centeral topic&lt;/main&gt;</p>
+        <p>The footer is the final of the 3 major semantic sections.</p>
+        <p>There can be more than 1 footer per page.</p>
+        <p></p>
+        <p>&lt;footer&gt;Contains information about the author, copyright data, or extra links&lt;/footer&gt;</p>
+    </section>
+
+    <nav>
+        <ul>
+        <li>
+            <a href="#Top">Top of Page</a>
+        </li>
+        </ul>  
+    </nav>
+
     <hr>
     <br>
     <section id="Additional tools and help:">
@@ -639,6 +709,42 @@
         <p>Changing the number in the start tag section of a header
             will automatically change the end tag to the same 
             value as well.</p>
+        <p>ctrl shift i (or right click and choose inspect) while in Live server or on a webpage
+             will open up the inspect webpage which is used to see the code behind a webpage.</p>
+        <p>You can use the asterisk * to add multiple of an element. To do this you type in the element name, followed by
+            the asterisk, and then a number for the number of times you want the element to be copied.</p>
+        <h4>Using the inspect window</h4>
+        <p>While in inspect when you hover over a section in the code it will highlight that area of the page of the left.</p>
+        <p>In inspect, you can change from the Elements tab to other sections like the Network tab using the 
+            tab names or double arrows at the top of the insepect page (top right of screen).</p>
+        <p>In the inspect window you can disable cache by going to the Network tab and clicking the box to check 
+            Disable cache. Browsers will automatically save images once viewed if cache is allowed. If cache is not allowed
+            then images will have to load each time you visit a section of the webpage that has the image.</p>
+        <p>In the inspect window in the Network tab there is a Filter section and below the input box for the Filter 
+            there are section you can click on such as JS, CSS, Img, etc. that allow you to filter by sections quickly and
+            easily. The results will appear at the bottom section of the inspect window.</p>
+        <p>Using single quotes outside of a double quote will be looked at by Visual Studio as you trying to quote something
+            while if you a single quote inside of a double quote "'" the single quote will be seen as part of the text.</p>
+        <p>The Code element allows you to display code as text and it will format the text in the code element to look
+            more like code (((You can't type regular elements still because it will still think you are tying to add an element
+            inside your code element and not reconize it as text. Thats why you need to use the ampersand symbol and the 
+            specific code for each symbol (see link below) to add symbols like less than or greather than. (less than or
+            greater than can also be ampersand lt ;, ampersand gt ;)))).</p>
+        <a href="https://www.teachucomp.com/special-characters-in-html-tutorial/">
+            List of special symbols code:</a>
+        <h4>Helpful Image websites:</h4>
+            <p>If you are unsure what image you want to use but want to keep coding you can structure your code around a 
+                placeholder image that will hold the correct space and code structure of your future image (see link below).</p>
+            <a href="https://loremipsum.io/21-of-the-best-placeholder-image-generators/">Placeholder image generator</a>
+            <p>If you need a free image you can go to one of the below links and search for image that are licenced as being for
+                free use.</p>
+            <a href="https://unsplash.com/">Images that are licenced for free that you can add to your website.</a>
+            <a href="https://www.pexels.com/">Free stock photos.</a>
+            <a href="https://gratisography.com/">ROYALTY FREE HD STOCK PHOTOS AND IMAGES (unique and funny images)</a>
+            <a href="https://pixabay.com/">Over 2.8 million+ high quality stock images, videos and music shared by our talented community</a>
+            <a href="https://www.irfanview.com/">Load in and resize images (also image editing)</a>
+            <a href="https://www.canva.com/">Canva makes it easy to create professional designs and to share or print them. (Subscription cost money)</a>
+            <a href="https://tinypng.com/">Smart WebP, PNG and JPEG compression (makes the file size smaller so your website doesn't requrie as much space or time to load)</a>
         </section>
 
         <nav>
@@ -666,6 +772,8 @@
             Inside the quotation marks following content=</p>
         </section>
 
+        </main>
+
             <nav>
                 <ul>
                 <li>
@@ -676,14 +784,15 @@
 
     <hr>
     <br>
+    <Footer>
     <h3>Current video location:</h3>
-        <a href="https://youtu.be/kUMe1FH4CHE?t=6203">Video Link</a>
+        <a href="https://youtu.be/kUMe1FH4CHE?t=7653">Video Link</a>
         <p>End section:</p>
         <p>&#8220;Add Links:&#8221;</p>
         <p>Line:</p>
-        <p>291</p>
-        <p>13 Apr 2023</p>
-
+        <p>676</p>
+        <p>17 Apr 2023</p>
+    </Footer>
     </body>
 
 </html>
